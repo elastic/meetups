@@ -1,2 +1,14 @@
-# meetups
-Materials from Elastic meetups
+# Elastic Meetup Materials
+
+Thanks a lot for joining our meetups on [Meetup.com](https://www.meetup.com/pro/elastic/) or [lu.ma](https://luma.com/you-know-for-search)!
+
+In this repository, you can find materials from past events grouped by city.
+
+If you'd like to stay connected or dive deeper, you can:
+
+* Subscribe to the Elastic community [newsletter](https://www.elastic.co/community/newsletter?utm_source=github&utm_campaign=meetup-followup-cm)
+* Ask technical questions on [Slack](https://ela.st/slack) or [Discuss](https://discuss.elastic.co?utm_source=github&utm_campaign=meetup-followup-cm)
+* Submit a session to [speak at a future meetup](https://sessionize.com/elastic-meetups/)
+* Sign up for a [free Elastic training](https://www.elastic.co/training?utm_source=github&utm_campaign=meetup-followup-cm)
+
+
