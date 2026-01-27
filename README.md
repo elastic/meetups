@@ -15,4 +15,4 @@ If you'd like to stay connected or dive deeper, you can:
 ## Add Your Slides
 
 After speaking at an Elastic meetup, send us a pull request with your slides — ideally exported as a PDF — under `city-name/date_short-title.pdf` like `San-Francisco/2026-01-16_Vector-Search.pdf`.
-
+And please compress all PDFs with a tool like https://www.ilovepdf.com/compress_pdf before uploading :)
