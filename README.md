@@ -18,4 +18,4 @@ And please compress all PDFs with a tool like https://www.ilovepdf.com/compress_
 
 If the folder does not exist you can upload the folder and new slides by dragging the folder, as per the below video:
 
-![New Folder Upload Video](./upload-new-folder-steps.mp4)
+![New Folder Upload Video](./upload-new-folder-steps.gif)
