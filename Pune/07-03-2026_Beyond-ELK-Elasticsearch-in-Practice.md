@@ -187,15 +187,15 @@ We will now see how Elastic's machine learning capabilities can help with the la
 
 - Go to the Discover by clicking on the hamburger menu at the top left, then on "Discover"
 
-![Discover Menu](images/image1.png)
+![Discover Menu](../Chennai/images/image1.png)
 
 - Once in the Discover, select the **Kibana Sample Data Logs** dataview in the drop-down menu
 
-![Select Dataview](images/image2.png)
+![Select Dataview](../Chennai/images/image2.png)
 
 - In the timepicker, at the top right, click on the calendar icon to select **The last 30 days**
 
-![Time Picker](images/image3.png)
+![Time Picker](../Chennai/images/image3.png)
 
 - Let's now build our Discover Session. In the field search bar, search for `geo..` The fields menu will list now only matching fields. Click on the circle + sign to add the "geo.src" field in the displayed columns of the main view. Do this for the following fields in this order:
   - `geo.src`, `geo.dest`
@@ -203,81 +203,81 @@ We will now see how Elastic's machine learning capabilities can help with the la
   - `host`, `request`, `response`
   - `referer`, `extension`
 
-![Build Discover Session](images/image4.png)
+![Build Discover Session](../Chennai/images/image4.png)
 
 You should see the following discover session
 
-![Discover Session](images/image5.png)
+![Discover Session](../Chennai/images/image5.png)
 
 - Save your Discover Session by clicking on the top right **Save** button. On the appearing popup screen:
   - name it `discover_session_kdsl`,
   - toggle on the "Store time with Discover Session" switch.
   - And then click on **Save**
 
-![Save Discover Session](images/image6.png)
+![Save Discover Session](../Chennai/images/image6.png)
 
 - In the "Breakdown" field, look for "host" and click on "host.keyword" as follow:
 
-![Breakdown Field](images/image7.png)
+![Breakdown Field](../Chennai/images/image7.png)
 
 - Save again your Discover Session to overwrite as you did in step 5. You should end seeing the same Discover Session as below
 
-![Saved Discover Session](images/image8.png)
+![Saved Discover Session](../Chennai/images/image8.png)
 
 ## Let's build a dashboard:
 
 - Go to the hamburger menu and then click on "Dashboards"
 
-![Dashboards Menu](images/image9.png)
+![Dashboards Menu](../Chennai/images/image9.png)
 
 - Click on **Create dashboard**
 
-![Create Dashboard](images/image10.png)
+![Create Dashboard](../Chennai/images/image10.png)
 
 - Click on **Add from library**. On the appearing popup:
   - In the search bar, look for the previously saved discover session (`discover_session_kdsl`)
   - Click once on the corresponding result link. The discover session will be automatically added in the dashboard
   - Close the popup
 
-![Add from Library](images/image11.png)
+![Add from Library](../Chennai/images/image11.png)
 
 - Extend the Discover Session on the whole width of the dashboard and click on the top right **Save** button
 
-![Extend Discover Session](images/image12.png)
+![Extend Discover Session](../Chennai/images/image12.png)
 
 - Save your dashboard as `dashboard_kdsl`. Don't forget to toggle on "Store time with dashboard" before saving.
 
-![Save Dashboard](images/image13.png)
+![Save Dashboard](../Chennai/images/image13.png)
 
 - "Switch to view mode"
 
-![Switch to View Mode](images/image14.png)
+![Switch to View Mode](../Chennai/images/image14.png)
 
 - Go to the Discover via the hamburger menu.
 - Click on the top right "folder" icon.
 - On the appearing flyout, look for your saved discover session `discover_session_kdsl`
 - Double-click on it to load it
 
-![Load Discover Session](images/image15.png)
+![Load Discover Session](../Chennai/images/image15.png)
 
 - Once your discover session is loaded, click on the "Lens" icon at the far right of the visualization graph.
 
-![Lens Icon](images/image16.png)
+![Lens Icon](../Chennai/images/image16.png)
 
 - You are taken to Lens to edit the visualization. Click to display 5 hosts instead of 3
 
-![Lens Visualization](images/image17.png)
+![Lens Visualization](../Chennai/images/image17.png)
 
 - Click on the top right **Save** button. On the appearing popup:
   - Enter a title for your lens visualization
   - Add to the existing dashboard `dashboard_kdsl`
   - Click on **Save and go to Dashboard** button
 
-![Save and Go to Dashboard](images/image18.png)
+![Save and Go to Dashboard](../Chennai/images/image18.png)
 
 - Save your dashboard as in step 5 and "Switch to view mode". You should see the following dashboard
 
-![Final Dashboard](images/image19.png)
+![Final Dashboard](../Chennai/images/image19.png)
 
 ## Multi-Metric Job:
 
@@ -286,15 +286,15 @@ In this challenge, we are going to analyze unusual high counts of events rate (w
 - Go to the Hamburger Menu and then click on the **Machine Learning** link under the "Analytics" section.
 - Once in the Machine Learning menu, click on the **Jobs** link under the "Anomaly Detection" section, ie **Machine Learning > Anomaly Detection > Jobs**. And then click on the **Create anomaly detection job** button
 
-![Machine Learning Jobs](images/image20.png)
+![Machine Learning Jobs](../Chennai/images/image20.png)
 
 - Select the `discover_session_kdsl` dataview or the **Kibana Sample Data Logs** index
 
-![Select Dataview](images/image21.png)
+![Select Dataview](../Chennai/images/image21.png)
 
 - On the general wizard screen, click on "Multi-metric" to enter the dedicated wizard to multi-metric jobs
 
-![Multi-metric Wizard](images/image22.png)
+![Multi-metric Wizard](../Chennai/images/image22.png)
 
 ### Time range
 
@@ -304,7 +304,7 @@ Select the timerange of data to analyze. Do in this order:
 - For the ending date of the time range period, **select a date ahead of now by 3 months**. For instance if we are in July, select October
 - Then click on the **> Next** button to move to the next step
 
-![Time Range Configuration](images/image23.png)
+![Time Range Configuration](../Chennai/images/image23.png)
 
 ### Choose fields
 
@@ -316,7 +316,7 @@ Do the following:
 - **Influencers**: in addition of `response.keyword`, add `clientip` and `request.keyword`
 - Then click on the **> Next** button to move to the next step
 
-![Choose Fields](images/image24.png)
+![Choose Fields](../Chennai/images/image24.png)
 
 ### Job details
 
@@ -327,21 +327,21 @@ Fill as follow:
 - Keep to memory requirement to **11MB**
 - Click on **> Next** to move to the next step
 
-![Job Details](images/image25.png)
+![Job Details](../Chennai/images/image25.png)
 
 - The job should pass all validations. Click on the **> Next** button.
 
-![Validation](images/image26.png)
+![Validation](../Chennai/images/image26.png)
 
 - Start the machine learning job by clicking on the **Create job** button. Your job should start and progress along your dataset, raising a 1st set of few anomalies.
 - Once finished, the **Start job running in real time** button will appear. Click on it
 - then click on the **View results** button to jump into the "Anomaly Explorer"
 
-![View Results](images/image27.png)
+![View Results](../Chennai/images/image27.png)
 
 ### Let's analyze the results within the "Anomaly Explorer"
 
-![Anomaly Explorer](images/image28.png)
+![Anomaly Explorer](../Chennai/images/image28.png)
 
 We can notice:
 - an unusual high count of 503 errors (server internal error) - **16x times than unusual**
@@ -361,7 +361,7 @@ We can notice:
 
 - Click on the 503 red square to know deeper about the error. You should see the following refined "Anomaly explorer"
 
-![Refined Anomaly Explorer](images/image29.png)
+![Refined Anomaly Explorer](../Chennai/images/image29.png)
 
 <details>
 <summary><strong>Question #2: What do you notice?</strong></summary>
@@ -378,11 +378,11 @@ We can notice:
   - Click on "Add to dashboard"
   - Click on "View by response.keyword"
 
-![View by Response](images/image30.png)
+![View by Response](../Chennai/images/image30.png)
 
   - On the popup, fill it as follow and click on **Save and go to Dashboard**
 
-![Add to Dashboard](images/image31.png)
+![Add to Dashboard](../Chennai/images/image31.png)
 
 > **Warning**: Once the anomaly swimlane is added, don't forget to save your dashboard and switch back into view mode.
 
@@ -425,15 +425,15 @@ In this challenge, we are going to analyze the behavior of clientip entities at 
 
 - Your dashboard should look like below:
 
-![Dashboard with Swimlane](images/image32.png)
+![Dashboard with Swimlane](../Chennai/images/image32.png)
 
 - Go back to **Machine Learning > Anomaly Detection > Jobs** and click on the anomaly explorer icon of the population job we have just set up and started.
 
-![Anomaly Explorer Icon](images/image33.png)
+![Anomaly Explorer Icon](../Chennai/images/image33.png)
 
 - You should see the following Anomaly Explorer:
 
-![Population Anomaly Explorer](images/image34.png)
+![Population Anomaly Explorer](../Chennai/images/image34.png)
 
 <details>
 <summary><strong>Question #3: What is the faulty clientip?</strong></summary>
@@ -455,7 +455,7 @@ In this challenge, we are going to analyze the behavior of clientip entities at 
 
 </details>
 
-![Question 4 Solution](images/image35.png)
+![Question 4 Solution](../Chennai/images/image35.png)
 
 ## Conclusion
 
@@ -493,11 +493,11 @@ In the following example, we'll show how to quickly analyze:
 - In the time picker, for the ending date of the time range period, **Make sure you select a date ahead of now by 3 months**. For instance if we are in July, select October. Should already be ok
 - You can notice an orange peak of logs as illustrate below
 
-![Orange Peak of Logs](images/image36.png)
+![Orange Peak of Logs](../Chennai/images/image36.png)
 
 - Click on the orange peak. A log rate analysis is immediately started. A deviation is detected as illustrated below
 
-![Log Rate Analysis](images/image37.png)
+![Log Rate Analysis](../Chennai/images/image37.png)
 
 <details>
 <summary><strong>Question #1: What is at the origin of this detected span?</strong></summary>
@@ -510,9 +510,9 @@ In the following example, we'll show how to quickly analyze:
 
 - Add the tool to your `dashboard_kdsl` dashboard by clicking on the right menu as follow
 
-![Add Log Rate Analysis](images/image38.png)
+![Add Log Rate Analysis](../Chennai/images/image38.png)
 
-![Add Log Rate Analysis Menu](images/image39.png)
+![Add Log Rate Analysis Menu](../Chennai/images/image39.png)
 
 > **Note**: No need to toggle on "Apply time range"
 
@@ -526,7 +526,7 @@ In the following example, we'll show how to quickly analyze:
 - In the time picker, for the ending date of the time range period, **Make sure you select a date ahead of now by 3 months**. For instance if we are in July, select October. Should already be ok.
 - Make sure the **Category field** is `message`. `message` is the original log line as it was injected into Elastic before parsing. Click on the **Run pattern analysis** button.
 
-![Log Pattern Analysis](images/image40.png)
+![Log Pattern Analysis](../Chennai/images/image40.png)
 - Add the "Log Pattern Analysis" tool to your dashboard as usual
 
 > **Note**: No need to toggle on "Apply time range"
@@ -537,11 +537,11 @@ In the following example, we'll show how to quickly analyze:
 
 - Go to your `dashboard_kdsl` dashboard and tune your time picker to go from **last 30 days to 3 months ahead**
 
-![Dashboard Time Picker](images/image41.png)
+![Dashboard Time Picker](../Chennai/images/image41.png)
 
 - On the "unusual clientip swimlane", right click as follow on the red square corresponding to the `30.156.16.164` clientip and click on "Filter for value" as follow:
 
-![Filter for Value](images/image42.png)
+![Filter for Value](../Chennai/images/image42.png)
 
 <details>
 <summary><strong>Question #2: What can you conclude more as to the behavior of `30.156.16.164` clientip?</strong></summary>
@@ -590,13 +590,13 @@ Before using the Elastic AI Assistant, you need to configure a connector to your
 
 - Go To **Stack Management > Connectors** as follow
 
-![Stack Management Connectors](images/image43.png)
+![Stack Management Connectors](../Chennai/images/image43.png)
 
-![Stack Management Connectors View](images/image44.png)
+![Stack Management Connectors View](../Chennai/images/image44.png)
 
 - Click on **Create Connector** and select **OpenAI** (or your preferred provider)
 
-![OpenAI Connector](images/image45.png)
+![OpenAI Connector](../Chennai/images/image45.png)
 
 ### Step 2: Configure Your Connector
 
@@ -617,7 +617,7 @@ Choose one of the following options based on your LLM provider:
 
 3. Click **Save** and test the connection using the **Test Tab**
 
-![Test Tab](images/image46.png)
+![Test Tab](../Chennai/images/image46.png)
 
 #### Option B: Local LLM with Ollama
 
@@ -699,7 +699,7 @@ Choose one of the following options based on your LLM provider:
 
 - Go to the **Test Tab** and click on the **Run** button
 
-![Test Tab](images/image46.png)
+![Test Tab](../Chennai/images/image46.png)
 
 - If the test is successful, you're ready to use the Elastic AI Assistant!
 - If the test fails, check:
@@ -708,7 +708,7 @@ Choose one of the following options based on your LLM provider:
   - Your URL is accessible (for cloud Elastic with local LLMs)
   - Firewall settings allow connections
 
-![Connector Configuration](images/image47.png)
+![Connector Configuration](../Chennai/images/image47.png)
 
 > **Security Note:** When exposing local servers publicly, always use proper authentication (API keys, tokens) and consider using HTTPS with SSL/TLS certificates for production environments.
 
@@ -793,7 +793,7 @@ ES\|QL is a powerful investigative language that enables users to pivot around d
 
 ## High Level Syntax
 
-![ESQL Pattern Analysis](images/image48.png)
+![ESQL Pattern Analysis](../Chennai/images/image48.png)
 
 Start with a source command like `from` to query an index and evaluate data from there. Processing commands can be chained until achieving a desired output and limiting results as needed.
 
@@ -936,11 +936,11 @@ Don't forget to run the query using the play button!
 
 By now, you should see the following visualization under the ESQL input panel. Click on the pencil icon:
 
-![ESQL Visualization](images/image49.png)
+![ESQL Visualization](../Chennai/images/image49.png)
 
 Change the visualization to "Heatmap" as follow and click on the **Apply and Close** button
 
-![Heatmap Visualization](images/image50.png)
+![Heatmap Visualization](../Chennai/images/image50.png)
 
 <details>
 <summary><strong>Question #1: What do you notice?</strong></summary>
@@ -955,7 +955,7 @@ Change the visualization to "Heatmap" as follow and click on the **Apply and Clo
 
 </details>
 
-![Heatmap Results](images/image51.png)
+![Heatmap Results](../Chennai/images/image51.png)
 
 ## Conclusion
 
@@ -995,19 +995,19 @@ Cancelled:true
 
 - Your Discover should look like below:
 
-![Cancelled Flights Discover](images/image52.png)
+![Cancelled Flights Discover](../Chennai/images/image52.png)
 
 ## Configure the Alert
 
 - Click on "Alerts" and then "Create search threshold rule" as below:
 
-![Create Alert](images/image53.png)
+![Create Alert](../Chennai/images/image53.png)
 
 ### Part 1: Configure Alert Schedule
 
 We are going to configure the alert so that every 10 mn, it checks for any cancelled flight Make sure the alert is configured and named as follow:
 
-![Alert Schedule Configuration](images/image54.png)
+![Alert Schedule Configuration](../Chennai/images/image54.png)
 
 > **Warning**: Don't save yet
 
@@ -1015,11 +1015,11 @@ We are going to configure the alert so that every 10 mn, it checks for any cance
 
 - Scroll down a little bit the alert configuration panel and add an "email" action by clicking on "email"
 
-![Email Action](images/image55.png)
+![Email Action](../Chennai/images/image55.png)
 
 - The email configuration unfold. Please fill it as follow:
 
-![Email Configuration](images/image56.png)
+![Email Configuration](../Chennai/images/image56.png)
 
 > **Warning**: Don't save yet
 
