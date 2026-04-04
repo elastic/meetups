@@ -101,7 +101,7 @@ In this workshop, you'll learn how to:
 
 We'll be using Elastic Serverless (Observability Solution) for this session. It runs the latest Elastic version.
 
-> **Important:** Go to [cloud.elastic.co](cloud.elastic.co) to create a new **Observability** project (not Elasticsearch) from your Elastic Cloud profile to get access to Anomaly Detection and all ML features.
+> **Important:** Go to [cloud.elastic.co](https://cloud.elastic.co) to create a new **Observability** project (not Elasticsearch) from your Elastic Cloud profile to get access to Anomaly Detection and all ML features.
 
 ![Create new project](images/image1.png)
 
