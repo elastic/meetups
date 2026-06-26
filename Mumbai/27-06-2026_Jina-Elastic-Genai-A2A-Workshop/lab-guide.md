@@ -447,8 +447,6 @@ POST /properties/_search
 }
 ```
 
-**Expected result:** Top results include `1 E Scott Street #2210, Chicago, IL 60610`.
-
 ---
 
 3. **Test French query** — replace only the `WHERE MATCH` search string with `Maison avec accès direct à la plage et balades en pleine nature`:
