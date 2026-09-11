@@ -13,3 +13,4 @@ How To Build Agentic Workflows & Searchable Applications with Elasticsearch, Jin
 - [Hyderabad](https://github.com/elastic/meetups/blob/main/Hyderabad/22-08-2026_Jina-Elastic-Genai-A2A.md) — 22 Aug 2026
 - [Ahmedabad](https://github.com/elastic/meetups/blob/main/Gujarat/23-08-2026_Jina-Elastic-Genai-A2A.md) — 23 Aug 2026
 - [Bangalore](https://github.com/elastic/meetups/blob/main/Bangalore/05-09-2026_Jina-Elastic-Genai-A2A.md) — 5 Sep 2026
+- [Delhi](https://github.com/elastic/meetups/blob/main/Delhi/workshops/12-09-2026_Jina-Elastic-Genai-A2A.md) — 12 Sep 2026
